@@ -12,13 +12,10 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 24px;
 }
-a:link {
-    color: #EAEFD3;
-    text-decoration: none
-}
 
-a:visited {
-    color: darkred;
+a:any-link{
+    color: #EAEFD3;
+    text-decoration: none;
 }
 
 a:hover {
