@@ -4,24 +4,47 @@
     <html lang="en">
       <head>
         <meta charset="utf-8">
-        <title>Hell on Earth</title>
+        <title>Shannon Steele</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
-        <script type="text/javascript" src="https://shannonsteele.github.io/Website/backgammonjs"></script>
+        <script type="text/javascript" src="____.js"> // Wait for the page to load first
+          window.onload = function() {
+  
+            //Get a reference to the link on the page
+            // with an id of "mylink"
+            var a = document.getElementById("mylink");
+  
+            //Set code to run when the link is clicked
+            // by assigning a function to "onclick"
+            a.onclick = function() {
+  
+              // Your code here...
+  
+              //If you don't want the link to actually 
+              // redirect the browser to another page,
+              // "google.com" in our example here, then
+              // return false at the end of this block.
+              // Note that this also prevents event bubbling,
+              // which is probably what we want here, but won't 
+              // always be the case.
+              return false;
+            }
+          }
+        </script>
       </head>
-      <body>
         <link rel="stylesheet" href="styles.css">
         <h1>
-            <div class = "homeBar">
+            <div class = "homeNav">
                 <a href = "https://shannonsteele.github.io/Website/" > Shannon Steele</a> 
-                <div class = "homeLink">
+                <div class = "menu-right">
                     <a href= "https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A45e2cc4a-d981-437a-8202-26526f9fc789">  Resume </a>
                     <a href = "https://www.linkedin.com/in/shannon-steele-862175152/" > LinkedIn </a>
                     <a>  Personal Projects </a>
-                    <a href="javascript:server.js"> BackGammon </a>
+                    <a id = "mylink" href="javascript:____.js"> Link Name </a>
                   </div>
             </div>
         </h1>
+      <body>
         <img src="http://i.imgur.com/XWG0O.gif" class = "center"/>
     
       </body>
